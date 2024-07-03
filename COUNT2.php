@@ -1,8 +1,6 @@
 <?php
   session_start();
- if (isset($_SESSION['pusername'])){
-    
-	
+ if (isset($_SESSION['priusername'])){
 	   }
    else {
 	   header("location: index.php");
@@ -17,14 +15,14 @@
 <center>
 <?php
 			
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect = mysqli_connect('localhost','root','','details');
+// mysql_select_db('details');
 if(isset($_POST['submit']))
 { 
 $cname = $_POST['cname'];
-$sql = mysql_query("SELECT * FROM addpdrive WHERE `CompanyName`='$cname'");
+$sql = $connect->query("SELECT * FROM addpdrive WHERE `CompanyName`='$cname'");
 
-while($row = mysql_fetch_assoc($sql))
+while($row = $sql->fetch_assoc())
 {
 	            print "<tr>"; 
 	print "<br><td>Date:";

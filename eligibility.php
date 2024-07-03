@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if(isset($_SESSION["pusername"])){
+  if(isset($_SESSION["priusername"])){
   }
    else
 	   header("location: index.php");
@@ -39,7 +39,7 @@
           <div class="square"></div>
           <?php
 		  $Welcome = "Welcome";
-          echo "<h1>" . $Welcome . "<br>". $_SESSION['pusername']. "</h1>";
+          echo "<h1>" . $Welcome . "<br>". $_SESSION['priusername']. "</h1>";
 		 echo "<br>";
 
 		  ?>
@@ -59,12 +59,11 @@
             <i class="fa fa-bars"></i>
           </div>
         <nav class="templatemo-left-nav">
-           <ul>
-            <li><a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="Placement Drives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
-            <li><a href="manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
-            <li><a href="queries.php"><i class="fa fa-users fa-fw"></i>Queries</a></li>
-            <li><a href="Students Eligibility.php" class="active"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
+            <ul>
+          <li><a href="index.php" ><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="Students Eligibility.php" class="active"><i class="fa fa-bar-chart fa-fw"></i> Eligibility Criteria</a></li>
+            <li><a href="queries.php"><i class="fa fa-database fa-fw"></i>Queries</a></li>
+            <li><a href="manage-users.php" ><i class="fa fa-users fa-fw"></i>Student Details</a></li>
             <li><a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>
         </nav>
@@ -75,10 +74,18 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../Homepage/index.php">Home CIT-PMS</a></li>
-                <li><a href="">Drives Home</a></li>
-                <li><a href="Notif.php">Notifications</a></li>
-                <li><a href="Change Password.php">Change Password</a></li>
+                  <li>
+                  <a href="../../Homepage/index.php">Home CUSAT-SOE</a>
+                </li>
+                <li>
+                  <a href="../../Drives/index.php">Drives Homepage</a>
+                </li>
+                <li>
+                  <a href="Notif.php">Notification</a>
+                </li>
+                <li>
+                  <a href="Change Password.php">Change Password</a>
+                  </li>
               </ul>
             </nav>
           </div>
@@ -173,7 +180,7 @@ $connect = mysqli_connect('localhost','root','','details');
 // mysql_select_db('details');
 $sql = "SELECT * FROM basicdetails where Approve='1'";
 $rs_result = $connect->query($sql); //run the query
-$total_records = $rs_result->num_rows();  //count number of records
+$total_records = $rs_result->num_rows;  //count number of records
 $totalpage = ceil($total_records / $num_rec_per_page);
 
 $currentpage = (isset($_GET['page']) ? $_GET['page'] : 1);
@@ -214,7 +221,7 @@ $prev = $currentpage-1;
 </div>
 
 			  <footer class="text-right">
-           		<p>Copyright &copy; 2018 CUSAT-SOE| Developed by
+           		<p>Copyright &copy; 2015 CUSAT-SOE | Developed by
               <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
 			  </p>
           </footer>

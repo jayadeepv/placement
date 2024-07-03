@@ -1,14 +1,12 @@
 <?php
   session_start();
- if (isset($_SESSION['priusername'])){
-    echo "Welcome, ".$_SESSION['priusername']."!";
+  if(($_SESSION["pusername"])){
+
   }
-   else
+   else {
 	   header("location: index.php");
-
+   }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,9 +16,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HOD - Preferences</title>
+    <title>Placement - Preferences</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
+
     <!--
     Visual Admin Template
     http://www.templatemo.com/preview/templatemo_455_visual_admin
@@ -44,9 +43,9 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <?php
-		  $Welcome = "Welcome";
-          echo "<h1>" . $Welcome . "<br>". $_SESSION['priusername']. "</h1>";
+<?php
+		  $Welcome = "Bomjour!!!";
+          echo "<h1>" . $Welcome . "<br>". $_SESSION['pusername']. "</h1>";
 		  ?>
         </header>
         <div class="profile-photo-container">
@@ -65,10 +64,11 @@
           </div>
         <nav class="templatemo-left-nav">
           <ul>
-          <li><a href="login.php" ><i class="fa fa-home fa-fw" class="active"></i>Dashboard</a></li>
-            <li><a href="Students Eligibility.php"><i class="fa fa-bar-chart fa-fw"></i>Check Students Eligibility</a></li>
-            <li><a href="queries.php"><i class="fa fa-database fa-fw"></i>Queries</a></li>
-            <li><a href="manage-users.php" ><i class="fa fa-users fa-fw"></i>Student Details</a></li>
+            <li><a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="Placement Drives.php" class="active"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
+            <li><a href="manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
+            <li><a href="queries.php"><i class="fa fa-users fa-fw"></i>Queries</a></li>
+            <li><a href="Students Eligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
             <li><a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>
         </nav>
@@ -79,18 +79,10 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                   <li>
-                  <a href="../../Homepage/index.php">Home CUSAT-SOE</a>
-                </li>
-                <li>
-                  <a href="../../Drives/index.php">Drives Homepage</a>
-                </li>
-                <li>
-                  <a href="Notif.php">Notification</a>
-                </li>
-                <li>
-                  <a href="Change Password.php">Change Password</a>
-                  </li>
+                  <li><a href="../../Homepage/indes.php">Home CUSAT-SOE</a></li>
+                <li><a href="">Drives Home</a></li>
+                <li><a href="Notif.php">Notifications</a></li>
+                <li><a href="Change Password.php">Change Password</a></li>
               </ul>
             </nav>
           </div>
@@ -99,31 +91,73 @@
           <div class="templatemo-content-widget white-bg">
            <div class="templatemo-flex-row flex-content-row">
             <div class="col-1">
-              <div class="templatemo-content-widget Bluegrey-bg">
+              <div class="templatemo-content-widget orangee-bg">
                 <i class="fa fa-times"></i>
                 <div class="media">
                   <div class="media-left">
-                    <a href="#">
-                      <img class="media-object img-circle" src="images/sunset1.png" alt="Sunset">
+                    <a href="Placement Drives/addpdrive.php">
+                      <img class="media-object img-circle" src="images/sunset11.png" alt="Sunset" width="100px" height="100px">
                     </a>
                   </div>
                   <div class="media-body">
-                    <a href="RNotif.php"><h2 class="media-heading text-uppercase">Read Messages</h2></a>
-                    <p>Messages from Placement Department and Principal</p>
+                    <h2 class="media-heading text-uppercase">Add Placement Drives</h2>
+                    <p>Add New/Existing Company To the Current Drive List</p>
                   </div>
                 </div>
               </div>
-              <div class="templatemo-content-widget Bluegrey1-bg">
+				<div class="templatemo-content-widget orangeee-bg">
+                <i class="fa fa-times"></i>
+                <div class="media">
+                  <div class="media-left">
+                   <a href="Placement Drives/update.php">
+                      <img class="media-object img-circle" src="images/UD.png" alt="Sunset" width="100px" height="100px">
+                   </a>
+                  </div>
+                  <div class="media-body">
+
+                    <h2 class="media-heading text-uppercase">Update Drive Details</h2><p>Update the Details of Drives happened and the Status of Students </p>
+                  </div>
+                </div>
+              </div>
+				<div class="templatemo-content-widget orangeeee-bg">
+                <i class="fa fa-times"></i>
+                <div class="media">
+                  <div class="media-left">
+                    <a href="Placement Drives/Companydetails.php">
+                      <img class="media-object img-circle" src="images/sunset33.jpg" alt="Sunset" width="100px" height="100px">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h2 class="media-heading text-uppercase">Company Details</h2>
+                    <p>View the Eligibility Criteria of Companies Visited to Our Campus</p>
+                  </div>
+                </div>
+              </div>
+				<div class="templatemo-content-widget oranggge-bg">
+                <i class="fa fa-times"></i>
+                <div class="media">
+                  <div class="media-left">
+                    <a href="Placement Drives/drivehome.php">
+                      <img class="media-object img-circle" src="images/DD.jpg" alt="Sunset" width="100px" height="100px">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h2 class="media-heading text-uppercase">Drive Details</h2>
+                    <p>Get the Whole Information of the Happened Drives</p>
+                  </div>
+                </div>
+              </div>
+              <div class="templatemo-content-widget orangge-bg">
                 <i class="fa fa-times"></i>
                 <div class="media">
                   <div class="media-left">
                     <a href="#">
-                      <img class="media-object img-circle" src="images/sunset2.jpg" alt="Sunset">
+                      <img class="media-object img-circle" src="images/UI.png" alt="Sunset" width="100px" height="100px">
                     </a>
                   </div>
                   <div class="media-body">
-                    <a href="WNotif.php"><h2 class="media-heading text-uppercase">Post Notifications</h2></a>
-                    <p>Send Messages to Students</p>
+                    <h2 class="media-heading text-uppercase">Upload Image to Gallery</h2>
+                    <p>Update the Image To PMS Gallery</p>
                   </div>
                 </div>
               </div>
@@ -131,7 +165,7 @@
           </div>
           <footer class="text-right">
             <p>Copyright &copy; 2018 CUSAT-SOE
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
+            | Designed by <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a></p>
           </footer>
         </div>
       </div>

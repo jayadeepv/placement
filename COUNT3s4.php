@@ -1,7 +1,7 @@
 <?php
   session_start();
- if (isset($_SESSION['pusername'])){
-    echo "Welcome, ".$_SESSION['pusername']."!";
+ if (isset($_SESSION['priusername'])){
+    
 	   }
    else {
 	   header("location: index.php");
@@ -95,10 +95,8 @@ print "</tr>";
 			  </div>
 			  </div>
  <footer class="text-right">
-           
-					<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
-				
+            <p>Copyright &copy; 2001-2015 CIT-PMS
+            |  Developed by <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a></p>
           </footer>         
         </div>
       </div>

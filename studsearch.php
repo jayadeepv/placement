@@ -1,6 +1,6 @@
 <?php
   session_start();
- if (isset($_SESSION['pusername'])){
+ if (isset($_SESSION['priusername'])){
 
 	   }
    else {
@@ -58,9 +58,9 @@
 					</form>
 </center>
 <footer class="text-right">
-            <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
-          </footer>         
+            <p>Copyright &copy; 2018 CUSAT-SOE
+            | Developed by <a href="http://www.Wafferdevelopers.com" target="_parent">HyperMine</a></p>
+          </footer>
         </div>
       </div>
     </div>

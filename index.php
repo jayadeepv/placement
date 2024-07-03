@@ -7,11 +7,11 @@
 		<!--favicon-->
         <link rel="shortcut icon" href="favicon.ico" type="image/icon">
         <link rel="icon" href="favicon.ico" type="image/icon">
-        
+      
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">  
-	    <title>Placement Login</title>
+	    <title>Principal Login</title>
         <meta name="description" content="">
         <meta name="author" content="templatemo">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
@@ -32,19 +32,19 @@
 		<div class="templatemo-content-widget templatemo-login-widget white-bg">
 			<header class="text-center">
 	          <div class="square"></div>
-	          <h1>Placement Login</h1>
+	          <h1>Principal Login</h1>
 	        </header>
 	        <form action="login1.php" class="templatemo-login-form" method="POST">
 	        	<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>	        		
-		              	<input type="text" class="form-control" placeholder="Email/Username" name="username">           
+		              	<input type="text" class="form-control" placeholder="Username" name="Username"">           
 		          	</div>	
 	        	</div>
 	        	<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>	        		
-		              	<input type="password" class="form-control" placeholder="******" name="password">           
+		              	<input type="password" class="form-control" placeholder="******" name="Password">           
 		          	</div>	
 	        	</div>	          	
 	          	<div class="form-group">
@@ -58,9 +58,12 @@
 				</div>
 	        </form>
 		</div>
-        <div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
+		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
 			<p>Can't Access Account? <strong><a href="Forgot Password.php" class="blue-text">Reset Password</a></strong></p>
 		</div>
+			
+		
+               
 		<!--Footer-->
 		<div class="footer">
 			<div class="container">
@@ -108,13 +111,12 @@
 					<h3>GET IN TOUCH</h3>
 					<p>University Hills</p>
 					<p>South Kalamessery, Kochi, India</p>
-					<p>08301-979790/223365</p>
-					<a href="mailto:soumen1696@gmail.com">soumen1696@gmail.com</a>
+					<p>08301-1979790/223365</p>
+					<a href="mailto:soumen1696@gmial.com">soumen1696@gmail.com</a>
 				</div>
 				<div class="col-md-3 ftr-logo">
 					<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
               <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
-				</div>
 				</div>
 				
 			</div>

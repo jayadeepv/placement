@@ -7,7 +7,7 @@ $connect = mysql_connect("localhost", "root", ""); // Establishing Connection wi
   $USN = $_POST['USN'];
   $Question = $_POST['Question'];
   $Answer = $_POST['Answer'];
-  $check = mysql_query("SELECT * FROM plogin WHERE Username='".$USN."'") or die("Check Query");
+  $check = mysql_query("SELECT * FROM prilogin WHERE Username='".$USN."'") or die("Check Query");
  if(mysql_num_rows($check) != 0) 
  {
 	 $row = mysql_fetch_assoc($check);
@@ -22,7 +22,7 @@ $connect = mysql_connect("localhost", "root", ""); // Establishing Connection wi
   else 
 	  echo "<center>Failed! Incorrect Credentials</center>";
  } else
- echo "<center> Enter Something Correctly!!! </center>";
+ echo "<center> Enter Something Correctly Champ!!! </center>";
  
     /*if($query = mysql_query("INSERT INTO slogin(Fullname, USN ,PASSWORD,Email,Question,Answer) VALUES ('$Name', '$USN', '$password','$Email','$Question','$Answer')"))
     {

@@ -11,10 +11,10 @@ TABLE OF CONTENT
 ----------------------------------------------*/
 /* 1. Universal Styles
 ----------------------------------------------*/
+.error {color: #FF0000;}
 * {	font-family: 'Open Sans', sans-serif; }
 body {	font-size: 13px; }
 body, .templatemo-left-nav { background: #1f2124; }
-.bg { background: #ffffff}
 h1, h2, h3 { margin: 0; }
 h2 { font-size: 1.6em; }
 h3 {
