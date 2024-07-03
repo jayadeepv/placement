@@ -1,9 +1,9 @@
 <?php
 session_start();
-$connect = mysqli_connect("localhost", "root", "",'placement'); // Establishing Connection with Server
+$connect = mysqli_connect("localhost", "root", "", "placement"); // Establishing Connection with Server
 // mysql_select_db("placement"); // Selecting Database from Server
 
-	$Username = $_SESSION['priusername'];
+	$Username = $_SESSION['username'];
 	$Password = $_POST['Password'];
 	$repassword = $_POST['repassword'];
 	$cur = $_POST['curpassword'];
@@ -11,15 +11,15 @@ $connect = mysqli_connect("localhost", "root", "",'placement'); // Establishing 
 	{
 		if($Password == $repassword)
 		{
-			$sql = $connect->query("SELECT * FROM `placement`.`prilogin` WHERE `Username`='$Username'");
-			if($sql->num_rows== 1)
+			$sql = $connect->query("SELECT * FROM `placement`.`slogin` WHERE `USN`='$Username'");
+			if($sql->num_rows == 1)
 			{
 				$row = $sql->fetch_assoc();
-				$dbpassword = $row['Password'];
+				$dbpassword = $row['PASSWORD'];
 
 				if($cur == $dbpassword)
 				{
-					if($query = $connect->query("UPDATE `placement`.`prilogin` SET `Password` = '$Password' WHERE `prilogin`.`Username` = '$Username'"))
+					if($query =$connect->query("UPDATE `placement`.`slogin` SET `PASSWORD` = '$Password' WHERE `slogin`.`USN` = '$Username'"))
 					{
 						echo "<center>Password Changed Successfully</center>";
 					} else {

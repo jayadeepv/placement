@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!--favicon-->
@@ -9,7 +10,7 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">  
-	    <title>Principal-Reset Password</title>
+	    <title>Student-Reset Password</title>
         <meta name="description" content="">
         <meta name="author" content="templatemo">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
@@ -36,13 +37,13 @@
 			<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>	        		
-		              	<input type="text" name="USN" class="form-control" placeholder="Username" >           
+		              	<input type="text" name="USN" class="form-control" placeholder="USN" >           
 		          	</div>	
 	        	</div>
 	        	<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>	        		
-		              	<select type="text" name="Question" class="form-control" placeholder="Security Question"> 
+		              	<select type="text" name="Question" class="form-control" placeholder="Security Question" > 
 								<option value="What is your nickname?">What is your nickname?</option>
 								<option value="What is your fav spot?">What is your fav spot?</option>
 							<option value="What is your fav dish?">What is your fav dish?</option>
@@ -52,7 +53,7 @@
 								<option value="What is your detained years in life?">What is your detained years in life?</option>
 						<option value="What is your enemy name?">What is your enemy name?</option>
 						<option value="What is your pet's name?">What is your pet's name?</option>
-					</div>
+					</div>	
 	        	</div>
 				<div class="form-group">
 	        		<div class="input-group">
@@ -65,7 +66,9 @@
 				</div>
 	        </form>
 		</div>
-		
+		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
+			<p>Not a registered user yet? <strong><a href="register.php" class="blue-text">Sign up now!</a></strong></p>
+		</div>
         <div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
 			<p>Remembered Password? <strong><a href="index.php" class="blue-text">Sign in!</a></strong></p>
 		</div>
@@ -121,10 +124,8 @@
 					<a href="mailto:cittumkur@rediffmail.com">cittumkur@rediffmail.com</a>
 				</div>
 				<div class="col-md-3 ftr-logo">
-					<a href="index.php"><img src="images/wds.png" alt=""/></a>
-							<p>Copyright &copy; 2015 CIT-PMS | Developed by
+					<p>Copyright &copy; 2015 CIT-PMS | Developed by
               <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
-			  </p>
 				</div>
 				</div>
 				<div class="clearfix"></div>
