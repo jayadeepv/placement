@@ -7,7 +7,7 @@ $connect = mysql_connect("localhost", "root", ""); // Establishing Connection wi
   $USN = $_POST['USN'];
   $Question = $_POST['Question'];
   $Answer = $_POST['Answer'];
-  $check = mysql_query("SELECT * FROM hlogin WHERE Username='".$USN."'") or die("Check Query");
+  $check = mysql_query("SELECT * FROM plogin WHERE Username='".$USN."'") or die("Check Query");
  if(mysql_num_rows($check) != 0) 
  {
 	 $row = mysql_fetch_assoc($check);

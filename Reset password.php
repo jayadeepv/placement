@@ -17,7 +17,7 @@ if(isset($_SESSION['reset']))
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">  
-	    <title>HOD-Reset Password</title>
+	    <title>Placement-Reset Password</title>
         <meta name="description" content="">
         <meta name="author" content="templatemo">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
@@ -117,7 +117,7 @@ if(isset($_SESSION['reset']))
 				</div>
 				<div class="col-md-3 ftr-logo">
 					<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a></p>
+              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
 				</div>
 				</div>
 				<div class="clearfix"></div>

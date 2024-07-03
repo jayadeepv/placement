@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if($_SESSION["husername"]){
+  if($_SESSION["pusername"]){
   }
    else {
 	   header("location: index.php");
@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HOD - Change Password</title>
+    <title>Placement - Change Password</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
 
@@ -39,8 +39,8 @@
         <header class="templatemo-site-header">
           <div class="square"></div>
 <?php
-		  $Welcome = "Ahoj!!";
-          echo "<h1>" . $Welcome . "<br>". $_SESSION['husername']. "</h1>";
+		  $Welcome = "Hello!!";
+          echo "<h1>" . $Welcome . "<br>". $_SESSION['pusername']. "</h1>";
 		  ?>
         </header>
         <div class="profile-photo-container">
@@ -58,10 +58,12 @@
             <i class="fa fa-bars"></i>
           </div>
         <nav class="templatemo-left-nav">
-        <ul>
-            <li><a href="#"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="manage-student.php"><i class="fa fa-users fa-fw"></i>Manage Students</a></li>
-            <li><a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li>
+          <ul>
+            <li><a href="#" ><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="Placement Drives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
+            <li><a href="manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
+            <li><a href="queries.php"><i class="fa fa-users fa-fw"></i>Queries</a></li>
+            <li><a href="Students Eligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
             <li><a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>
         </nav>
@@ -72,10 +74,10 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="../../Homepage/index.php">Home CUSAT-SOE</a></li>
-                <li><a href="../../Drives/index.php">Drives</a></li>
-    <li><a href="Notif.php">Notification</a></li>
-	<li><a href="Change Password.php" class="active">Change Password</a></li>
+               <li><a href="../../Homepage/index.php">Home CUSAT-SOE</a></li>
+                <li><a href="../../Drives/index.php">Drives Home</a></li>
+                <li><a href="Notif.php">Notifications</a></li>
+                <li><a href="Change Password.php" class="active">Change Password</a></li>
               </ul>
             </nav>
           </div>
@@ -112,7 +114,7 @@
           </div>
           <footer class="text-right">
             <p>Copyright &copy; 2018 CUSAT-SOE
-            | Developed by <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a></p>
+            | Developed by <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine </a></p>
           </footer>
         </div>
       </div>
